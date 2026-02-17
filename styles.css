@@ -88,6 +88,8 @@ td {
   display: block;
   color: rgb(255, 255, 255);
   text-decoration: none;
+  margin-top: 2px;
+  border-radius: 1em;
 }
 
 .sidebar a.sidebar-main {

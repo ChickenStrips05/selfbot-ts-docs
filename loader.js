@@ -49,5 +49,5 @@ async function load(page) {
     const sidebar = document.getElementById("sidebar")
     const sitemap = JSON.parse(await (await fetch("https://raw.githubusercontent.com/ChickenStrips05/selfbot-ts-docs/refs/heads/master/pages.json")).text())
 
-    sidebar.innerHTML = sitemap.map(page => (`<a href=${page.url} class=${page.header ? "sidebar-main" : "sidebar-sub"}>${page.name}</a>`)).join("\n")
+    sidebar.innerHTML = sitemap.map(page => (`<a href=${page.url} class="${page.header ? (page.url === window.location.href ? "sidebar-main active" : "sidebar-main") : ((page.url === window.location.href ? "sidebar-sub active" : "sidebar-sub"))}">${page.name}</a>`)).join("\n")
 }

@@ -45,6 +45,7 @@ code {
 button {
     background-color: #000000 !important;
     border: 1px solid orange !important;
+    padding: 1px !important;
 }
 
 pre[class*="language-"] {

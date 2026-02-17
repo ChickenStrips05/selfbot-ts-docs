@@ -14,7 +14,7 @@ To install selfbot-ts you can use the Node Package Manager command line tool. Ru
 npm install selfbot-ts
 ```
 
-### Getting started
+### [Getting Started](/selfbot-ts-docs/docs/getting-started/)
 Here's a ping/pong command example. You can find more examples and code on the [Getting Started](/selfbot-ts-docs/docs/getting-started/) page.
 
 ```typescript

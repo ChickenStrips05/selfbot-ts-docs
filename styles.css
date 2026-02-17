@@ -44,6 +44,7 @@ code {
 
 button {
     background-color: #000000 !important;
+    border: 1px solid orange;
 }
 
 pre[class*="language-"] {
@@ -68,6 +69,6 @@ table {
 th,
 td {
     padding: 8px 12px;
-    border: 1px solid #30363d;
+    border: 1px solid #303030;
     text-align: left;
 }

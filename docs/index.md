@@ -36,7 +36,7 @@ client.on("MESSAGE_CREATE", async (message) => { // /api/Message object
 ### Source & other links
 You can find the source code of this module at [https://github.com/ChickenStrips05/selfbot-ts](https://github.com/ChickenStrips05/selfbot-ts).
 The NPM package can be found at [https://www.npmjs.com/package/selfbot-ts](https://www.npmjs.com/package/selfbot-ts).
-Some data structures were made by the [Discord Userdoccers](https://github.com/discord-userdoccers) and their doccumentations helped create this project.
+Some data structures were made by the [Discord Userdoccers](https://github.com/discord-userdoccers) and their documentations helped create this project.
 
 ### Getting a Discord User token
 To get your Discord User token:

@@ -89,22 +89,22 @@ td {
   color: rgb(255, 255, 255);
   text-decoration: none;
   margin-top: 2px;
-  border-radius: 1em;
+  border-radius: 0.5em;
 }
 
 .sidebar a.sidebar-main {
-  background-color: #161616;
+  background-color: #0f0f0f;
   font-size: 1.1em;
-  padding: 16px;
+  padding: 12px;
   color: white;
 }
 
 .sidebar a.sidebar-sub {
-  background-color: #0c0c0c;
+  background-color: #050505;
   font-size: 1.1em;
   color: white;
   padding: 10px;
-  margin-left: 10px;
+  margin-left: 15px;
 }
 
 .sidebar a.active {

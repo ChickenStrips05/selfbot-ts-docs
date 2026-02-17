@@ -87,7 +87,6 @@ td {
 .sidebar a {
   display: block;
   color: rgb(255, 255, 255);
-  padding: 16px;
   text-decoration: none;
 }
 
@@ -99,8 +98,8 @@ td {
 
 .sidebar a.sidebar-sub {
   background-color: #0c0c0c;
-  font-size: 1.1em;
-  color: white;
+  font-size: 0.9em;
+  color: rgb(231, 231, 231);
   margin-left: 10px;
 }
 

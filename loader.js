@@ -41,7 +41,7 @@ Prism.plugins.toolbar.registerButton('copy-to-clipboard', function (env) {
 
 async function load(page) {
     const pageContent = document.getElementById("main-content")
-    const res = await fetch(`/docs/${page}.md`)
+    const res = await fetch(`/${page}.md`)
     const text = await res.text()
 
     pageContent.innerHTML = marked.parse(text)

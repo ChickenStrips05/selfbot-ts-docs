@@ -30,7 +30,7 @@ button {
 }
 
 pre[class*="language-"] {
-    background: #1f1d17 !important;
+    background: #0c0c0c !important;
     border-radius: 1em;
 }
 
@@ -56,8 +56,12 @@ td {
 }
 
 .sidebar {
-  width: 12em;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  position: fixed;
   height: 100%;
+  overflow: auto;
 }
 
 .sidebar a {
@@ -89,8 +93,8 @@ td {
 }
 
 .content {
-    padding: 1px 16px;
-    margin-left: 12em;
+  margin-left: 200px;
+  padding: 1px 16px;
 }
 
 @media screen and (max-width: 767px) {
@@ -100,15 +104,6 @@ td {
 
     .toolbar-item {
         font-size: 1.5em;
-    }
-
-    .sidebar {
-        width: 100%;
-        display: none;
-    }
-
-    .content {
-        margin-left: 0;
     }
 }
 

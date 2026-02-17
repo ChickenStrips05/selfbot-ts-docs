@@ -1,8 +1,7 @@
 body,
 textarea,
 p,
-input,
-button {
+input {
     background: black;
     color: white;
 }
@@ -19,7 +18,7 @@ a {
 }
 
 code {
-    background-color: #131313;
+    background-color: #0c0c0c;
     color: orange
 }
 
@@ -43,8 +42,12 @@ code {
     }
 }
 
+.toolbar-item {
+    background-color: #131313;
+}
+
 pre[class*="language-"] {
-    background: #131313 !important;
+    background: #0c0c0c !important;
     border-radius: 1em;
 }
 

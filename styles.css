@@ -10,7 +10,6 @@ body {
     font-size: 1em;
     line-height: 1.6;
     font-family: system-ui, sans-serif;
-    height: 150%;
 }
 
 a {
@@ -96,6 +95,13 @@ td {
   background-color: #161616;
   font-size: 1.1em;
   color: white;
+}
+
+.sidebar a.sidebar-sub {
+  background-color: #0c0c0c;
+  font-size: 1.1em;
+  color: white;
+  padding-left: 10px;
 }
 
 .content {

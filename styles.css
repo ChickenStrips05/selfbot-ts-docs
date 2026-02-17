@@ -10,6 +10,7 @@ body {
     font-size: 1em;
     line-height: 1.6;
     font-family: system-ui, sans-serif;
+    display: flex;
 }
 
 a {
@@ -57,9 +58,7 @@ td {
 
 .sidebar {
   width: 12em;
-  position: fixed;
   height: 100%;
-  overflow: auto;
 }
 
 .sidebar a {
@@ -91,8 +90,8 @@ td {
 }
 
 .content {
-  margin-left: auto;
-  padding: 1px 16px;
+  flex: 1;
+  padding: 16px;
 }
 
 @media screen and (max-width: 767px) {

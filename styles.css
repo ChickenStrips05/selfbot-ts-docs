@@ -93,13 +93,15 @@ td {
 .sidebar a.sidebar-main {
   background-color: #161616;
   font-size: 1.1em;
+  padding: 16px;
   color: white;
 }
 
 .sidebar a.sidebar-sub {
   background-color: #0c0c0c;
-  font-size: 0.9em;
-  color: rgb(231, 231, 231);
+  font-size: 1.1em;
+  color: white;
+  padding: 10px;
   margin-left: 10px;
 }
 

@@ -41,9 +41,13 @@ Prism.plugins.toolbar.registerButton('copy-to-clipboard', function (env) {
 
 async function load(page) {
     const pageContent = document.getElementById("main-content")
-    const res = await fetch(page)
-    const text = await res.text()
+    const pageText = await (await fetch(page)).text()
 
-    pageContent.innerHTML = marked.parse(text)
+    pageContent.innerHTML = marked.parse(pageText)
     Prism.highlightAll();
+
+    const sidebar = document.getElementById("sidebar")
+    const sitemap = JSON.parse(await (await fetch("https://raw.githubusercontent.com/ChickenStrips05/selfbot-ts-docs/refs/heads/master/pages.json")).text())
+
+    sidebar.innerHTML = sitemap.map(page => (`<a href=${page.url} class=${page.header ? "sidebar-main" : "sidebar-sub"}>${page.name}</a>`)).join("\n")
 }

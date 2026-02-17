@@ -1,0 +1,4 @@
+[
+    {"url": "/", "name": "Main page", "header": true},
+    {"url": "/docs/getting-started", "name": "Getting started", "header": false}
+]

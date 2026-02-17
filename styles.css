@@ -58,7 +58,7 @@ td {
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 12em;
   position: fixed;
   height: 100%;
   overflow: auto;
@@ -93,7 +93,7 @@ td {
 }
 
 .content {
-  margin-left: 200px;
+  margin-left: 12em;
   padding: 1px 16px;
 }
 

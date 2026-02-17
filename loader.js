@@ -2,7 +2,7 @@
 const renderer = {
     link(href, title, text) {
         const link = marked.Renderer.prototype.link.call(this, href, title, text);
-        return link.replace("<a", "<a target='_blank' rel='noreferrer' style='color: lightblue' ");
+        return link.replace("<a", "<a target='_blank' rel='noreferrer' ");
     }
 };
 

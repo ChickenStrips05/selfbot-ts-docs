@@ -1,0 +1,57 @@
+body,
+textarea,
+p,
+input,
+button {
+    background: black;
+    color: white;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.6;
+    font-family: system-ui, sans-serif;
+}
+
+code {
+    background-color: #131313;
+    color: orange
+}
+
+@media screen and (max-width: 767px) {
+    .code-toolbar {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .code-toolbar {
+        width: 75%;
+    }
+}
+
+pre[class*="language-"] {
+    background: #131313 !important;
+    border-radius: 1em;
+}
+
+div {
+    text-align: left;
+}
+
+.katex-display .katex {
+    text-align: left !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px 12px;
+    border: 1px solid #30363d;
+    text-align: left;
+}

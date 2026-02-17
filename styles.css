@@ -46,6 +46,7 @@ button {
     background-color: #000000 !important;
     border: 1px solid orange !important;
     padding: 5px 3px !important;
+    font-weight: bolder !important;
 }
 
 pre[class*="language-"] {

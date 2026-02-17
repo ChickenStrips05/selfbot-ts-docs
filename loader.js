@@ -46,8 +46,12 @@ async function load(page) {
     pageContent.innerHTML = marked.parse(pageText)
     Prism.highlightAll();
 
+    function normalise(url) {
+        return url.replaceAll("/", "")
+    }
+
     const sidebar = document.getElementById("sidebar")
     const sitemap = JSON.parse(await (await fetch("https://raw.githubusercontent.com/ChickenStrips05/selfbot-ts-docs/refs/heads/master/pages.json")).text())
 
-    sidebar.innerHTML = sitemap.map(page => (`<a href=${page.url} class="${page.header ? (page.url === window.location.pathname ? "sidebar-main active" : "sidebar-main") : ((page.url === window.location.pathname ? "sidebar-sub active" : "sidebar-sub"))}">${page.name}</a>`)).join("\n")
+    sidebar.innerHTML = sitemap.map(page => (`<a href=${page.url} class="${page.header ? (normalise(page.url) === normalise(window.location.pathname) ? "sidebar-main active" : "sidebar-main") : ((normalise(page.url) === normalise(window.location.pathname) ? "sidebar-sub active" : "sidebar-sub"))}">${page.name}</a>`)).join("\n")
 }

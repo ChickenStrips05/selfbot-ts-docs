@@ -1,4 +1,4 @@
 [
-    {"url": "/", "name": "Main page", "header": true},
-    {"url": "/docs/getting-started", "name": "Getting started", "header": false}
+    {"url": "/selfbot-ts-docs/", "name": "Main page", "header": true},
+    {"url": "/selfbot-ts-docs/docs/getting-started", "name": "Getting started", "header": false}
 ]

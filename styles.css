@@ -74,3 +74,26 @@ td {
     border: 1px solid #303030;
     text-align: left;
 }
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: rgb(255, 255, 255);
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.sidebar-main {
+  background-color: #161616;
+  font-size: 1.1em;
+  color: white;
+}

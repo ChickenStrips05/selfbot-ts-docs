@@ -40,9 +40,9 @@ Some data structures were made by the [Discord Userdoccers](https://github.com/d
 
 ### Getting a Discord User token
 To get your Discord User token:
-1. Go in the Discord desktop app or on the [web app](https://discord.com/channels/@me)
-2. Open the developer tools (ctrl+shift+I) and head to the network/requests tab
-3. Make any request (opening a channel, sending a message, reacting)
+1. Go in the Discord desktop app or on the [web app](https://discord.com/channels/@me).
+2. Open the developer tools (ctrl+shift+I) and head to the network/requests tab.
+3. Make any request (opening a channel, sending a message, reacting).
 4. Inspect that request and find and copy the Authorization http header. 
 **DO NOT SHARE THIS TOKEN OR ANY SCREENSHOTS OF A REQUEST.**
 

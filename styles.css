@@ -30,7 +30,7 @@ button {
 }
 
 pre[class*="language-"] {
-    background: #3b3526 !important;
+    background: #252218 !important;
     border-radius: 1em;
 }
 
@@ -132,5 +132,9 @@ td {
 
     .toolbar-item {
         font-size: 1.2em;
+    }
+
+    .menu-buttons {
+        display: none;
     }
 }

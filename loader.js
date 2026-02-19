@@ -67,8 +67,8 @@ async function load(page) {
     
     const sitemap = JSON.parse(await (await fetch("https://raw.githubusercontent.com/ChickenStrips05/selfbot-ts-docs/refs/heads/master/pages.json")).text())
 
-    sidebar.innerHTML = sitemap
-        .map(page => (`<a href=${page.url} class="${page.header ? (normalise(page.url) === normalise(window.location.pathname) ? "sidebar-main active" : "sidebar-main") : ((normalise(page.url) === normalise(window.location.pathname) ? "sidebar-sub active" : "sidebar-sub"))}">${page.name}</a>`))
-        .unshift("<button class=\"menu-buttons\" onclick=\"closeNav()\">Close</button>")    
-        .join("\n")
+    sidebar.innerHTML = [
+        "<button class=\"menu-buttons\" onclick=\"closeNav()\">Close</button>",
+        ...sitemap.map(page => (`<a href=${page.url} class="${page.header ? (normalise(page.url) === normalise(window.location.pathname) ? "sidebar-main active" : "sidebar-main") : ((normalise(page.url) === normalise(window.location.pathname) ? "sidebar-sub active" : "sidebar-sub"))}">${page.name}</a>`))
+        ].join("\n")
 }

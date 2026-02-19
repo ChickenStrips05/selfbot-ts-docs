@@ -39,8 +39,22 @@ Prism.plugins.toolbar.registerButton('copy-to-clipboard', function (env) {
     return button;
 });
 
+const sidebar = document.getElementById("sidebar")
+const pageContent = document.getElementById("main-content")
+
+function toggleNav() {
+    return sidebar.classList.toggle("open")
+}
+
+function openNav() {
+    sidebar.classList.add("open")
+}
+
+function closeNav() {
+    return sidebar.classList.remove("open")
+}
+
 async function load(page) {
-    const pageContent = document.getElementById("main-content")
     const pageText = await (await fetch(page)).text()
 
     pageContent.innerHTML = marked.parse(pageText)
@@ -50,8 +64,11 @@ async function load(page) {
         return url.replaceAll("/", "")
     }
 
-    const sidebar = document.getElementById("sidebar")
+    
     const sitemap = JSON.parse(await (await fetch("https://raw.githubusercontent.com/ChickenStrips05/selfbot-ts-docs/refs/heads/master/pages.json")).text())
 
-    sidebar.innerHTML = sitemap.map(page => (`<a href=${page.url} class="${page.header ? (normalise(page.url) === normalise(window.location.pathname) ? "sidebar-main active" : "sidebar-main") : ((normalise(page.url) === normalise(window.location.pathname) ? "sidebar-sub active" : "sidebar-sub"))}">${page.name}</a>`)).join("\n")
+    sidebar.innerHTML = sitemap
+        .map(page => (`<a href=${page.url} class="${page.header ? (normalise(page.url) === normalise(window.location.pathname) ? "sidebar-main active" : "sidebar-main") : ((normalise(page.url) === normalise(window.location.pathname) ? "sidebar-sub active" : "sidebar-sub"))}">${page.name}</a>`))
+        .unshift("<button class=\"menu-buttons\" onclick=\"closeNav()\">Close</button>")    
+        .join("\n")
 }

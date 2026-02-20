@@ -99,9 +99,10 @@ td {
 
 .menu-buttons {
     color: white;
+    background-color: black;
+    border: 1px solid orange;
     top: 0;
     width: 100%;
-    padding: 10px;
     margin: 5px;
 }
 

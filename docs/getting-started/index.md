@@ -4,7 +4,6 @@
 This guide will teach you about:
 - Information about selfbots
 - How to set up your own selfbot
-- The main Client class and all it's properties
 - How to make complex bots
 - Reporting bugs and contributing
 
@@ -35,3 +34,24 @@ client.once("READY", () => {
     console.log(`Logged in as ${client.username} (${client.id})`)
 })
 ```
+
+Next, you can register a simple message and command listener:
+
+```typescript
+import { Message } from "selfbot-ts" // For type def
+
+// ... client init ...
+
+client.on("MESSAGE_CREATE", async (message: Message) => { // Don't include ": Message" if you're using JS
+    console.log(`${message.author.username} sent ${message.content} in ${message.channelId}`)
+
+    // Reply with pong if message is ping
+    if (message.author.id != client.id) { // to avoid infinite reply loops
+        if (message.content.toLowerCase == "ping") {
+            await message.reply("Pong!") // Built-in Message.reply method
+        }
+    }
+})
+```
+
+Pretty simple right?

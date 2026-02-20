@@ -1,4 +1,7 @@
 [
     {"url": "/selfbot-ts-docs/", "name": "Main page", "header": true},
-    {"url": "/selfbot-ts-docs/docs/getting-started/", "name": "Getting started", "header": false}
+    {"url": "/selfbot-ts-docs/docs/getting-started/", "name": "Getting started", "header": false},
+    {"url": "/selfbot-ts-docs/docs/built-in-classes/", "name": "Built-in classes", "header": true},
+    {"url": "/selfbot-ts-docs/docs/client/", "name": "Client", "header": false},
+    {"url": "/selfbot-ts-docs/docs/supported-channel-types/", "name": "Supported Channel Types", "header": false}
 ]

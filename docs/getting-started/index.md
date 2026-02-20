@@ -1,7 +1,7 @@
 <title>Getting started</title>
 
 ## Getting started
-This guild will teach you about:
+This guide will teach you about:
 - Information about selfbots
 - How to set up your own selfbot
 - The main Client class and all it's properties

@@ -103,7 +103,8 @@ td {
     border: 1px solid orange;
     top: 0;
     width: 100%;
-    margin: 5px;
+    padding: 15px;
+    border-radius: 1em;
 }
 
 @media screen and (max-width: 767px) {
